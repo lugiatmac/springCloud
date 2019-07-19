@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: branch001
+      server:
+        git:
+          uri: https://github.com/lugiatmac/spring-cloud-config
+          searchPaths: '{application}'
+          username: lugiatmac
+          password: 190718Tuf
+server:
+  port: 18888
